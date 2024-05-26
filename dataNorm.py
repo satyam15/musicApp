@@ -7,7 +7,7 @@ def normalizeJson(file_path):
 
     df = pd.DataFrame(data)
     df.index.name = 'index'
-    return normalized_data
+    return df
 
 filePath = 'test.json'
 df = normalizeJson(filePath)
