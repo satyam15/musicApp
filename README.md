@@ -32,8 +32,8 @@ This project is a Flask-based application that processes and normalizes a datase
 4. **Access the API endpoints:**
 
     - Fetch all songs: `GET /songs`
-    - Fetch song by title: `GET /songs/<title>`
-    - Rate a song: `POST /songs/<title>/rate`
+    - Fetch song by title: `GET /song/<title>`
+    - Rate a song: `POST /song/<title>/rate`
 
 ### Example Requests
 
@@ -46,13 +46,13 @@ This project is a Flask-based application that processes and normalizes a datase
 - **Fetch song by title:**
 
     ```sh
-    curl http://127.0.0.1:5000/songs/3AM
+    curl http://127.0.0.1:5000/song/3AM
     ```
 
 - **Rate a song:**
 
     ```sh
-    curl -X POST -H "Content-Type: application/json" -d '{"rating": 5}' http://127.0.0.1:5000/songs/3AM/rate
+    curl -X POST -H "Content-Type: application/json" -d '{"rating": 5}' http://127.0.0.1:5000/song/3AM/rate
     ```
 
 ## Running Tests
